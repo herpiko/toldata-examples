@@ -1,0 +1,3 @@
+*.pb.go
+example1/*.pb.go
+example2/*.pb.go

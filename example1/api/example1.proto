@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+import "github.com/citradigital/toldata/toldata.proto";
+import "github.com/gogo/protobuf/gogoproto/gogo.proto";
+
+package example1;
+option go_package = "example1";
+
+message Hello {
+  string name = 1;
+}
+
+
+message Empty {}
+
+service Example1 {
+    rpc Say(Hello) returns(Empty);
+}

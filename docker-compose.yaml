@@ -1,0 +1,9 @@
+version: "3.1"
+services:
+  testnats:
+    image: nats:2.9.2-alpine3.16
+    restart: always
+    ports:
+      - 8222:8222
+      - 6222:6222
+      - 4222:4222
