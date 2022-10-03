@@ -1,3 +1,3 @@
-- `docker-compose up -d'
+- `docker-compose up -d`
 - `cd example1 && go run cmd/example/main.go`
 - Open another terminal, `cd example2 && go run cmd/example/main.go`

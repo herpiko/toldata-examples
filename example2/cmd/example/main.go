@@ -28,12 +28,8 @@ func main() {
 	if err != nil {
 		log.Fatalln(err)
 	}
-	// Do not defer bus.Close() since it will be out of scope
-
 	d := example2.NewExample2()
-
 	svr := api.NewExample2ToldataServer(bus, d)
-
 	wait, err := svr.SubscribeExample2()
 	if err != nil {
 		log.Println(err)
